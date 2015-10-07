@@ -1,0 +1,91 @@
+    .grid-container{
+        width: 100%; 
+
+    }
+
+    /*-- our cleafix hack -- */ 
+    .row:before, .row:after {
+        content:"";
+        display: table ;
+        clear:both;
+
+    }
+
+    [class*='col-'] {
+        float: left; 
+        min-height: 1px; 
+        /*-- our gutter -- */
+        padding: 15px; 
+        background-color: #a6ce7c;
+        margin-bottom: 5px;
+
+
+    }
+
+
+    .col-1{ width: 12.5%;
+
+    margin-right: 5px;
+    margin-bottom: 5px; }
+    .col-6{ width: 12.5%; 
+        margin-right: 5px;
+    margin-bottom: 5px; }
+    .col-2{ width: 25%;  
+    margin-right: 5px;
+    margin-bottom: 5px; }
+    .col-3{ width: 30%;   
+    margin-right: 5px;
+    margin-bottom: 5px;   }
+    .col-4{ width: 50%;
+    margin-right: 5px;
+    margin-bottom: 5px;  }
+    .col-5{ width: 95%;
+    }
+
+
+   
+
+    /*-- some extra column content styling --*/
+    [class*='col-'] > p { 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white;
+
+    }
+     @media all and (max-width:410px){
+        .col-1{ width: 25%;   }
+        .col-2{ width: 100%;        }
+        .col-3{ width: 83.33%;   }
+        .col-4{ width: 0%;background-color: white; padding: 0;margin: 0;border: 0; }
+        .col-5{ width: 100%;    }
+        .col-6{ width: 22%;  }}
+
+
+     @media all and (max-width:800px){
+        .col-1{ width: 100%;        }
+        .col-2{ width: 100%;    }
+        .col-3{ width: 100%;   }
+
+        .col-4{ width: 0%;    }
+        .col-5{ width: 100%;    }
+    }
+
+
+
+.grid-col-1of10{
+  width: 100%;
+}
+
+[class^='grid-col-'] {
+  float: right;
+  padding: 0; 
+  text-align: center; /* center the content in this block by default */
+}
+
+@media(min-width: 30em){
+  .grid-col-1of10{
+    width:10%;
+  }
+}
+

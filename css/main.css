@@ -32,12 +32,12 @@ section code {
 }
 
 h1{
-    font-family: "Source Sans Pro";
+   font-family: "Source Sans Pro";
    font-weight: 300;
    font-style: normal;
    font-size: 1.875em;
    line-height: 2px;
-     color: #a6ce7c;
+   color: #a6ce7c;
      
 }
 
@@ -206,36 +206,70 @@ label, input {
 /* Styling for main navigation menu */
 /* CSSTerm.com Simple CSS menu */
 
+
 .menu ul {
-    margin: 0; 
-    padding: 0;
-    border: 5em solid #efefef;
-    width:11.6em;
-    list-style-type: none;
+
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 250px;
+  padding-left: 0px;
+
+
+}
+.menu ul li {
+  
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  padding: 15px 50px;
+  background: #fff;
+  color:#43A047;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.menu ul li:hover {
+  background:#43A047;
+  color: white;
+}
+.menu ul li ul {
+  padding-top: 2px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 151px;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+.menu ul li ul li { 
+
+  text-align: center;
+  background: #43A047 ; 
+  display: block; 
+  color: white;   
+    transition: 0.5s ease;
+}
+.menu ul li ul li:hover { 
+  font-size: 105%;
+background: #4CAF50; 
+
+}
+.menu ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
-.menu ul li a {
-   font-family: "Source Sans Pro";
-   font-weight: 400;
-   font-style: normal;
-   font-size: 1.25em;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #a6ce7c; 
-    padding: 0.656em 0.6875em;
-    background-color: #ffffff;
-    display:block;
-    border-bottom: 0.05em solid #efefef;
-}
- 
-.menu ul li a:visited {
-    color: #a6ce7c;
-}
- 
-.menu ul li a:hover, .menu ul li .current {
-    color: white;
-    background-color: #a6ce7c;
-}
+
 
 /* Styling for product listing */
 .product-listing{

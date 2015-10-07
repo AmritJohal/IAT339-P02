@@ -6,14 +6,14 @@
     <meta charset="utf-8">
     <title>P01 - Style Guide </title>
 
-    <link href="css/main.css" rel="stylesheet">
-
+    <link href= "css/main.css" rel="stylesheet">
+    <link href= "css/girds.css" rel="stylesheet">
 
   </head>
 
   <body>
 
-    <h1>P01 - Style Guide Template - Amrit Johal</h1>
+    <h1>P01 - Style Guide Template - Group 18</h1>
 
 
     <nav>
@@ -222,15 +222,20 @@
 
         <h3>Rendered element:</h3>
           <div class="menu">
+            <ul style="border: 4em  solid #efefef;">
+              <li>GENRES
+                <ul>
+                  <li>Fiction</li>
+                  <li>Non-Fiction</li>
+                  <li>Sci Fi</li>
+                  <li>Fantasy</li>
+                  <li>Romance</li>
+                  <li>Children</li>
+              
+            </ul>
 
-          <ul>
-          <li><a href="#">Fiction</a></li>
-          <li><a href="#">Non-Fiction</a></li>
-          <li><a href="#">Sci Fi</a></li>
-          <li><a href="#">Fantasy</a></li>
-          <li><a href="#">Romance</a></li>
-          <li><a href="#">Children</a></li>
-          </ul>
+            <li class='grid-col-1of10'>Cart</li>
+            <li class='grid-col-1of10'>Account</li>
           </div>
          
 
@@ -266,9 +271,61 @@
       
         </div>
 
+        </section>
+
+       <!-- Default grid section -->
+        <section class="grid-row">
+          <h2>Grid</h2>
+
+          <h3>CSS selector:</h3>
+          <p>.grid-col-</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;div class="grid-col-2of10"&gt;Some Content&lt;/div&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+
+        <div class="container">
+    <div class="row">
+        <div class="col-1"><p>Logo</p></div> 
+        <div class="col-2"><p>Search Bar</p></div>
+    </div> 
+    
+    <div class="row">
+        <div class="col-6"><p>Genres</p></div> 
+        <div class="col-4"><p>White Space</p></div> 
+        <div class="col-6"><p>Account</p></div> 
+        <div class="col-6"><p>Cart</p></div>
+    </div> 
+
+    <div class="row">
+        <div class="col-2"><p>Top Sale</p></div> 
+      </div>
+
+    <div class="row">
+        <div class="col-3" style="padding-bottom: 200px;padding-top: 200px;"><p>Book 1</p></div> 
+        <div class="col-3" style="padding-bottom: 200px;padding-top: 200px;"><p>Book 2</p></div>
+        <div class="col-3" style="padding-bottom: 200px;padding-top: 200px;"><p>Book 3</p></div>
+    </div> 
+
+    <div class="row">
+        <div class="col-2"><p>New Releases</p></div> 
+    </div>
+    <div class="row">
+        
+        <div class="col-3" style="padding-bottom: 200px;padding-top: 200px;"><p>Book 1</p></div> 
+        <div class="col-3" style="padding-bottom: 200px;padding-top: 200px;"><p>Book 2</p></div>
+        <div class="col-3" style="padding-bottom: 200px;padding-top: 200px;"><p>Book 3</p></div>
+
+    </div> 
+    <div class="row">
+        <div class="col-5"><p>Services and Infos</p></div> 
+    </div> 
+
       </section>
 
-    </section>
+       </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
 
