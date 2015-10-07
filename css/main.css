@@ -32,7 +32,7 @@ section code {
 }
 
 h1{
-   font-family: "Source Sans Pro";
+   
    font-weight: 300;
    font-style: normal;
    font-size: 1.875em;
@@ -42,7 +42,7 @@ h1{
 }
 
 h2{
-    font-family: "Source Sans Pro";
+    
    font-weight: 600;
    font-style: normal;
    font-size: 1.5625em;
@@ -52,7 +52,7 @@ h2{
 }
 
 h3{
-    font-family: "Source Sans Pro";
+  
    font-weight: 300;
    font-style: normal;
    font-size: 1em;
@@ -134,7 +134,7 @@ input {
 
 label{
    
-   font-family: "Source Sans Pro";
+  
    font-weight: 600;
    font-style: normal;
 
@@ -151,7 +151,7 @@ label, input {
 
 /* Styling for headings */
  .main {
-     font-family: "Source Sans Pro";
+     
    font-weight: 200;
    font-style: normal;
    font-size: 2.5em;
@@ -161,7 +161,7 @@ label, input {
 }
 
 .booktitle {
-     font-family: "Source Sans Pro";
+   
    font-weight: 600;
    font-style: normal;
    font-size: 0.9375em;
@@ -170,7 +170,7 @@ label, input {
 }
 
 .author {
-  font-family: "Source Sans Pro";
+  
    font-weight: 300;
    font-style: normal;
    font-size: 0.875em;
@@ -179,7 +179,7 @@ label, input {
 }
 
 .price {
-     font-family: "Source Sans Pro";
+     
    font-weight: 600;
    font-style: normal;
    font-size: 0.9375em;
@@ -189,7 +189,7 @@ label, input {
 
 /* Styling for paragraphs, bulleted list, numbered list */
 .paragraph-style, .bullet-list, .numbered-list {
-  font-family: "Source Sans Pro";
+ 
    font-weight: 400;
    font-style: normal;
    font-size: 0.875em;
@@ -209,6 +209,7 @@ label, input {
 
 .menu ul {
 
+   font-weight: 350;
   font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 250px;
@@ -223,7 +224,7 @@ label, input {
   position: relative;
   padding: 15px 50px;
   background: #fff;
-  color:#43A047;
+  color:#a6ce7c;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -232,7 +233,7 @@ label, input {
   transition: all 0.2s;
 }
 .menu ul li:hover {
-  background:#43A047;
+  background:#a6ce7c;
   color: white;
 }
 .menu ul li ul {
@@ -253,14 +254,15 @@ label, input {
 .menu ul li ul li { 
 
   text-align: center;
-  background: #43A047 ; 
+  background: #a6ce7c ; 
   display: block; 
   color: white;   
     transition: 0.5s ease;
 }
 .menu ul li ul li:hover { 
   font-size: 105%;
-background: #4CAF50; 
+background: #fff; 
+color: #a6ce7c;
 
 }
 .menu ul li:hover ul {

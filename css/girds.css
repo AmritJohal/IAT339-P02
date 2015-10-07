@@ -16,7 +16,7 @@
         min-height: 1px; 
         /*-- our gutter -- */
         padding: 15px; 
-        background-color: #a6ce7c;
+        background-color: #e2e2e2;
         margin-bottom: 5px;
 
 
@@ -33,7 +33,7 @@
     .col-2{ width: 25%;  
     margin-right: 5px;
     margin-bottom: 5px; }
-    .col-3{ width: 30%;   
+    .col-3{ width: 22%;   
     margin-right: 5px;
     margin-bottom: 5px;   }
     .col-4{ width: 50%;
@@ -75,6 +75,9 @@
 
 .grid-col-1of10{
   width: 100%;
+  font-weight: 300;
+  font-style: italic;
+   text-transform: none;
 }
 
 [class^='grid-col-'] {
