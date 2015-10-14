@@ -5,6 +5,7 @@
 body {
   font-family: "Source Sans Pro";
   padding: 2rem;
+    background-color: #efefef;
 }
 
 section:not([id]) {
@@ -106,7 +107,8 @@ a:active, a:hover {
 /* Styling for submit/reset buttons */
 .button-submit {
   display: inline-block;
-  padding: 0.5em 0.75em;
+margin-left: 71px;
+  padding: 10px 25px 10px 25px;
   color: #FFF;
   background-color: #608fe2;
   border-radius: 0.15em;
@@ -124,24 +126,60 @@ a:active, a:hover {
 }
 
 /* Styling for text input field and label */
-input {
-    margin-top: 1em;
-    padding: 8px;
-     border: solid 1px gainsboro;
-     background-color: #efefef;
-     font-style: italic; 
+.contactform {
+  display:block;
+    padding:1.25rem;
+  position: relative;
+  float: right;
+  background: white;
+ 
+ 
+  width: 40%;
+  padding: 20px 30px 20px 30px;
+  border: 1px solid #DDD;
 }
 
-label{
-   
-  
-   font-weight: 600;
+.contactform input {
+    margin-top: 1em;
+     margin-left: auto;
+  margin-right: auto;
+    padding: 8px;
+     border: solid 1px gainsboro;
+     background-color: #f7f7f7;
+     font-style: italic; 
+     width: 70%;
+}
+
+.contactform label{
+
+   width: 20%;
+  color: #494949;
+   padding-left: 72px;
+   margin: 10px 0px 5px;
+   font-weight: 500;
    font-style: normal;
 
 }
-label, input {
+.contactform label, input {
   display: block;
+
 }
+
+.contactform textarea{
+  height: 100px;
+display: block;
+    margin-top: 1em;
+    margin-bottom: 10px;
+    padding: 8px;
+     margin-left: auto;
+  margin-right: auto;
+     border: solid 1px gainsboro;
+     background-color: #f7f7f7;
+     font-style: italic; 
+     width: 70%;
+}
+
+
 
 
 /* 
@@ -190,7 +228,8 @@ label, input {
 /* Styling for paragraphs, bulleted list, numbered list */
 .paragraph-style, .bullet-list, .numbered-list {
  
-   font-weight: 400;
+   
+   font-weight: 300;
    font-style: normal;
    font-size: 0.875em;
      color: #000000;
@@ -209,11 +248,13 @@ label, input {
 
 .menu ul {
 
-   font-weight: 350;
+   
+  font-weight: 400;
   font-size: 15px;
   text-transform: uppercase;
-  margin-bottom: 250px;
+  margin-bottom: 50px;
   padding-left: 0px;
+  background-color: white;
 
 
 }
@@ -253,6 +294,7 @@ label, input {
 }
 .menu ul li ul li { 
 
+ font-weight: 200;
   text-align: center;
   background: #a6ce7c ; 
   display: block; 
@@ -271,13 +313,25 @@ color: #a6ce7c;
   visibility: visible;
 }
 
+.news{
+   display:inline-block;
+    padding:3rem;
+    margin:1.2rem;
+    background-color: white;
+    max-width: 40%;
+    list-style-type: none;
+}
 
+.news h1 a  {
+  margin-left: auto ;
+  margin-right: auto;
+}
 
 /* Styling for product listing */
 .product-listing{
      display:inline-block;
-    border: 5em solid #efefef;
     padding:1.25rem;
+    background-color: white;
     max-width: 14em;
     list-style-type: none;
 }
