@@ -72,14 +72,17 @@
     }
 
 
-
-.grid-col-1of10{
+.grid-col-1of10 {
   width: 100%;
   font-weight: 300;
   font-style: italic;
    text-transform: none;
+   
 }
-
+.info-col{
+  width: 50%;
+ 
+}
 [class^='grid-col-'] {
   float: right;
   padding: 0; 
