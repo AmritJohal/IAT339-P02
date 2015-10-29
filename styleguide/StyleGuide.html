@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide </title>
+
+    <link href= "main.css" rel="stylesheet">
+    <link href= "girds.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1>P01 - Style Guide- Group 18</h1>
+
+
+    <nav>
+      
+      <p>
+        On this page:
+      </p>
+      <ul>
+        <li>
+          <a href="#interactive_elements">Interactive Elements</a>
+        </li>
+        <li>
+          <a href="#text_elements">Text Elements</a>
+        </li>
+        <li>
+          <a href="#combined_elements">Combined Elements</a>
+        </li>
+      </ul>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button-nav"&gt;Buy Now&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+        <a class="button-nav" href="#">Buy Now</a>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>a, a:active, a:hover</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" &gt;Read More&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <p><a href="#">Read More</a>
+
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-submit</p>
+
+        <h3>Sample code:</h3>
+       <code>&lt;a href="#" class="button-submit"&gt;Submit&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+       <a class="button-nav" href="#">Submit</a>
+
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+
+         <h3>CSS selector:</h3>
+        <p>label, input </p>
+
+        <h3>Sample code:</h3>
+       <code>&lt;label for="input-type" &gt;Review Title:&lt;/label&gt;</code>
+       <code>&lt;input type="text" id="input-type" placeholder="Title"&gt;</code>
+
+        <h3>Rendered element:</h3>
+  
+
+        <label for="input-type">Review Title:</label>
+
+        <input type="text" id="input-type" placeholder="Title">
+
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+
+        <h3>Main Heading CSS selector:</h3>
+        <p>.main</p>
+
+        <h3>Sample code:</h3>
+       <code>&lt;h1 class="main"&gt; Top Sellers &lt;/h1 &gt;</code>
+
+        <h3>Rendered element:</h3>
+       <h1  class="main"> Top Sellers </h1>
+
+
+        <h3>Heading 2 - Book Titles CSS selector:</h3>
+        <p>.booktitle</p>
+
+        <h3>Sample code:</h3>
+       <code>&lt;h1 class="booktitle"&gt; To Kill A Mockingbird &lt;/h1 &gt;</code>
+
+        <h3>Rendered element:</h3>
+       <h1 class="booktitle"> To Kill A Mockingbird </h1>
+
+        <h3>Heading 3 - Author CSS selector:</h3>
+        <p>.author</p>
+
+        <h3>Sample code:</h3>
+       <code>&lt;h1 class="author"&gt; Harper Lee &lt;/h1 &gt;</code>
+
+        <h3>Rendered element:</h3>
+       <h1 class="author"> Harper Lee </h1>
+
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.paragraph-style</p>
+
+        <h3>Sample code:</h3>
+       <code>&lt;p class="paragraph-style"&gt; Lorem ipsum dolor sit amet.....&lt;/p&gt;</code>
+
+        <h3>Rendered element:</h3>
+       <p class="paragraph-style">  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in dictum ante. Curabitur nunc est, accumsan id tellus vel, lacinia maximus metus. Mauris eu enim nisl. Morbi consectetur ullamcorper risus, nec aliquet odio bibendum accumsan. Duis ultricies sapien vitae porttitor iaculis. Donec finibus ligula bibendum auctor luctus. Vivamus sagittis odio ut sapien ornare laoreet. Fusce orci enim, bibendum eu mauris eget, varius egestas lacus. In mi lorem, posuere quis dolor sit amet, dictum pharetra neque. Donec condimentum risus in diam finibus, sed consequat lectus luctus. Phasellus ut purus turpis. Vivamus et bibendum augue. Aenean scelerisque volutpat accumsan. </p>
+
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+        
+        <h3>CSS selector:</h3>
+        <p>.bullet-list</p>
+
+        <h3>Sample code:</h3>
+       <code>&lt;ul class="bullet-list"&gt;&lt;li&gt; List item 1 &lt;/li&gt;&lt;/ul&gt;</code>
+
+        <h3>Rendered element:</h3>
+          <ul class="bullet-list">
+           <li>List item 1</li>
+           <li>List item 2</li>
+           <li>List item 3</li>
+           <li>List item 4</li>
+           <li>List item 5</li>
+         </ul>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+
+         <h3>CSS selector:</h3>
+        <p>.numbered-list</p>
+
+        <h3>Sample code:</h3>
+       <code>&lt;ol class="numbered-list"&gt;&lt;li&gt; List item 1 &lt;/li&gt;&lt;/ol&gt;</code>
+
+        <h3>Rendered element:</h3>
+          <ol class="bullet-list">
+           <li>List item </li>
+           <li>List item </li>
+           <li>List item </li>
+           <li>List item </li>
+           <li>List item </li>
+         </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+       
+        <h3>CSS selector:</h3>
+        <p>.cssmenu</p>
+
+        <h3>Sample code:</h3>
+       <code>&lt;div class="cssmenu"&gt;
+        &lt;ul&gt;&lt;li&gt;&lt;a href="#"&gt;Genres&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</code>
+
+        <h3>Rendered element:</h3>
+          <div id='cssmenu'>
+      <ul>
+        <li class='active has-sub'><a href='Home.html'><span>Genres</span></a>
+          <ul>
+           <li class='has-sub'><a href='homewithfliter.html'><span>Fiction</span></a></li>
+           <li class='has-sub'><a href='homewithfliter.html'><span>Non-Fiction</span></a></li>
+
+           <li class='has-sub'><a href='homewithfliter.html'><span>Sci Fi</span></a></li>
+           <li class='has-sub'><a href='homewithfliter.html'><span>Fantasy</span></a></li>
+           <li class='has-sub'><a href='homewithfliter.html'><span>Romance</span></a></li>
+           <li class='has-sub'><a href='homewithfliter.html'><span>Children</span></a></li>
+          </ul>
+        </li>
+       <li><a href='news.html'><span>News</span></a></li>
+       <li ><a href='about.html'><span>About</span></a></li>
+       <li ><a href='contact.html'><span>Contact</span></a></li>
+      </ul>
+    </div>
+
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+
+        <h3>CSS selector:</h3>
+          <p>.product-listing + .product-listing h1 + .product-listing, .button-nav + img</p>
+
+        <h3>Sample code:</h3>
+       <code>&lt;div class="product-listing"&gt;
+        &lt;a href="#"&gt;&lt;img src="img/Mockingbird.JPG" alt="book cover"&gt;&lt;/a&gt;&lt;a href="#"&gt;&lt;h1 class="booktitle"&gt; To Kill A Mockingbird&lt;/h1&gt;&lt;/a&gt;&lt;a href="#"&gt;&lt;h1 class="author"&gt;Harper Lee&lt;/h1&gt;&lt;/a&gt;&lt;a href="#"&gt;&lt;h1 class="price"&gt; $11.99&lt;/h1&gt;&lt;/a&gt;&lt;a class="button-nav" href="#"&gt; Buy Now &lt;/a&gt;&lt;a class="button-nav" href="#"&gt; Add to Cart &lt;/a&gt;&lt;/div&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div class="product-listing">
+          
+          <a href="#">
+            <img src="img/book1.png" alt="book cover">
+          </a>
+          <a href="#">
+            <h1 class="booktitle"> To Kill A Mockingbird </h1>
+          </a>
+          <a href="#">
+            <h1 class="author"> Harper Lee </h1>
+          </a>
+          <a href="#">
+             <h1 class="price"> $11.99 </h1>
+          </a>
+            <a class="button-nav" href="#">Buy Now</a>
+            <a class="button-nav" href="#">Add to Cart</a>
+      
+        </div>
+
+        </section>
+
+       <!-- Default grid section -->
+        <section class="grid-row">
+          <h2>Grid</h2>
+
+          <h3>CSS selector:</h3>
+          <p>.grid-col-</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;div class="grid-col-2of10"&gt;Some Content&lt;/div&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <br>
+
+        <div class="container">
+    <div class="row">
+        <div class="col-2"><p>Logo</p></div> 
+        <div class="col-4"><p>Search Bar</p></div>
+        <div class="col-1"><p>Account</p></div> 
+        <div class="col-1"><p>Cart</p></div>
+    </div> 
+    
+    <div class="row">
+        <div class="col-6"><p>Genres</p></div> 
+        <div class="col-6"><p>About</p></div> 
+        <div class="col-6"><p>News</p></div> 
+        <div class="col-6"><p>Contact</p></div>
+    </div> 
+
+    <div class="row">
+        <div class="col-2"><p>Top Sale</p></div> 
+      </div>
+
+    <div class="row">
+        <div class="col-3" style="padding-bottom: 170px;padding-top: 170px;"><p>Book 1</p></div> 
+        <div class="col-3" style="padding-bottom: 170px;padding-top: 170px;"><p>Book 2</p></div>
+        <div class="col-3" style="padding-bottom: 170px;padding-top: 170px;"><p>Book 3</p></div>
+        <div class="col-3" style="padding-bottom: 170px;padding-top: 170px;"><p>Book 4</p></div>
+        <div class="col-3" style="padding-bottom: 170px;padding-top: 170px;"><p>Book 5</p></div>
+    </div> 
+
+    <div class="row">
+        <div class="col-2"><p>New Releases</p></div> 
+    </div>
+    <div class="row">
+        <div class="col-3" style="padding-bottom: 170px;padding-top: 170px;"><p>Book 1</p></div> 
+        <div class="col-3" style="padding-bottom: 170px;padding-top: 170px;"><p>Book 2</p></div>
+        <div class="col-3" style="padding-bottom: 170px;padding-top: 170px;"><p>Book 3</p></div>
+        <div class="col-3" style="padding-bottom: 170px;padding-top: 170px;"><p>Book 4</p></div>
+        <div class="col-3" style="padding-bottom: 170px;padding-top: 170px;"><p>Book 5</p></div>
+    </div> 
+    <div class="row">
+        <div class="col-5"><p>Services and Infos</p></div> 
+    </div> 
+
+      </section>
+
+       </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+
+  </body>
+</html>

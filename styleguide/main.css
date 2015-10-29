@@ -1,0 +1,420 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  font-family: 'Roboto', 'Roboto-Thin';
+  padding: 2rem;
+  background-color: #eeeeee;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 0.15em solid #494949;
+}
+
+
+
+section p {
+  font-family: 'Roboto-Light';
+  font-size: 12px;
+  margin-top: 5;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+section code {
+  background-color: white;
+  padding: 0.5em 0.75em;
+  display: block;
+}
+
+h1{
+  font-size: 24px;
+  line-height: 24px;
+  margin: 30px 0;
+  font-weight: 300;
+  text-transform: uppercase;  
+}
+
+h2{
+  font-family: "Roboto";
+    margin: 5px 0;
+    font-size: 18px;
+  padding: 5px 0 5px 0;
+    letter-spacing: 1px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 200;  
+}
+
+h3{
+   font-style: normal;
+  color: #009688;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+}
+}
+
+.indent{
+  text-indent: 3em;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+    font-family: 'Roboto-Thin';
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px;
+    color: #FFF;
+    background-color: #1380b5;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s ease-out;
+    ransition: background-color 0.5s ease-out;
+
+    vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+
+
+
+.button-nav:hover, .button-nav:focus {
+  
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+
+}
+
+
+/* Styling for the in-text link */
+a {
+  color: #1380b5;
+  text-decoration: none;
+}
+
+
+a:active, a:hover {
+  text-decoration: none;
+}
+
+
+
+/* Styling for text input field and label */
+input {
+    margin-top: 1em;
+    padding: 8px;
+     border: solid 1px gainsboro;
+     background-color: #efefef;
+     font-style: italic; 
+}
+
+label{
+   
+   font-weight: 600;
+   font-style: normal;
+
+}
+label, input {
+  display: block;
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+/* Styling for headings */
+ .main {
+   font-weight: 200;
+   font-style: normal;
+   font-size: 2.5em;
+   line-height: 30px;
+   text-transform: uppercase;
+     color: #494949;
+}
+
+.booktitle {
+   font-weight: 600;
+   font-style: normal;
+   font-size: 0.9375em;
+   line-height: 2px;
+     color: #000000;
+}
+
+.author {
+   font-weight: 300;
+   font-style: normal;
+   font-size: 0.875em;
+   line-height: 2px;
+     color: #000000;
+}
+
+.price {
+   font-weight: 600;
+   font-style: normal;
+   font-size: 0.9375em;
+   line-height: 8px;
+     color: #608fe2;
+}
+
+/* Styling for paragraphs, bulleted list, numbered list */
+.paragraph-style, .bullet-list, .numbered-list {
+   font-weight: 400;
+   font-style: normal;
+   font-size: 0.875em;
+     color: #000000;
+    line-height: 1.2em;
+  max-width: 40em;
+}
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Styling for main navigation menu */
+/* CSSTerm.com Simple CSS menu */
+
+
+#cssmenu {
+  background: white;
+  margin: 0;
+  width: auto;
+  padding: 0;
+  display: block;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  height:48px;
+}
+
+#cssmenu ul:after,#cssmenu:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+
+  height:48px;
+  margin: 0;
+  display: block;
+  position: relative;
+}
+#cssmenu ul li a {
+
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu ul li ul {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+#cssmenu ul li ul li {
+  text-align: left;
+  max-height: 0;
+  position: absolute;
+  -webkit-transition: max-height 0.4s ease-out;
+  -moz-transition: max-height 0.4s ease-out;
+  -ms-transition: max-height 0.4s ease-out;
+  -o-transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-out;
+  background: #009688;
+}
+
+
+
+#cssmenu ul li ul li a {
+  font-size: 15px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0;
+  display: block;
+  width: 200px;
+  padding: 15px 30px;
+}
+#cssmenu ul li ul li:hover > a,
+#cssmenu ul li ul li.active > a {
+  color:#009688;
+  background-color: white;
+}
+
+#cssmenu ul li ul li:hover > ul {
+  left: 100%;
+  top: 0;
+}
+#cssmenu ul li ul li:hover > ul > li {
+  position: relative;
+}
+
+
+
+
+
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul > li {
+  float: none;
+  display: inline-block;
+}
+#cssmenu.align-center > ul {
+  text-align: center;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-right > ul {
+  float: right;
+}
+#cssmenu.align-right > ul > li:hover > ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu.align-right ul ul li:hover > ul {
+  right: 100%;
+  left: auto;
+}
+#cssmenu.align-right ul ul li a {
+  text-align: right;
+}
+#cssmenu > ul > li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  z-index: 0;
+  background: #009688;
+  -webkit-transition: height .2s;
+  -moz-transition: height .2s;
+  -ms-transition: height .2s;
+  -o-transition: height .2s;
+  transition: height .2s;
+}
+
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 70px;
+  padding-left: 30px;
+}
+
+/*arrow down*/
+
+#cssmenu > ul > li.has-sub > a:before {
+  display: block;
+  content: "";
+  border: 5.5px solid transparent;
+  z-index: 2;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 38px;
+  top: 23px;
+}
+
+#cssmenu > ul > li > a {
+  color: #009688;
+  padding: 13.5px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 15px;
+  z-index: 2;
+  position: relative;
+}
+
+
+/*while panle slider down*/
+#cssmenu > ul > li:hover:after,
+#cssmenu > ul > li.active:after {
+  height: 100%;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {
+  color: white;
+}
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li.active > a:after {
+  background: white;
+}
+#cssmenu > ul > li:hover > a:before,
+#cssmenu > ul > li.active > a:before {
+  border-top-color: white;
+}
+#cssmenu > ul > li:hover > ul {
+  left: 0;
+}
+#cssmenu > ul > li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+
+
+/* Styling for product listing */
+.product-listing{
+     display:inline-block;
+    padding:1.25rem;
+    max-width: 14em;
+    list-style-type: none;
+}
+
+
+.product-listing h1 {
+   
+    text-align: center;
+
+}
+
+.product-listing{
+  background-color: white;
+   
+    text-align: center;
+
+}
+
+img{
+ 
+  height: auto;
+  width: auto;
+  max-width: 100%;
+
+}
