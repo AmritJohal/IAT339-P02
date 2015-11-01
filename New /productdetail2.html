@@ -12,10 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
-       $(".btn2").click(function(){
+       $("#btn2").click(function(){
             $("form").slideDown();
         });
-         $(".btn1").click(function(){
+         $("#btn1").click(function(){
             $("form").slideUp();
         });
        
@@ -25,62 +25,73 @@
   </head>
 
    <body>
-    <div class="box">
-      <div class="box2">
-        <div class="container-2">
-          <a href='Home.html'style="margin-right: 5px;"><button class="icon"><i class="fa fa-user"></i></button></a>
-          <a href='buyandcheckout.html'><button class="icon"><i class="fa fa-shopping-cart"> </i></button></a>
-        </div>
-
-        <div class="container-1">
+    <div class="col-1of10">
+      <div class="col-2of10">
+       
+       <div class="col-2of10-logo">
           <a href='Home.html'><img src="img/logo2.png" alt = "home"></a>
         </div>
         
-        <div class="container-4">
+        <div class="col-2of10-search">
           <input type="search" id="search" placeholder="Search by title, author, series or ISBN? " />
           <a href='Home.html'><button class="icon"><i class="fa fa-search"></i></button></a>
         </div>
+
+
+        <div class="col-2of10-icon">
+          <a href='Home.html'><button class="icon"><i class="fa fa-user"></i></button></a>
+          <a href='buyandcheckout.html'><button class="icon"><i class="fa fa-shopping-cart"> </i></button></a>
+        </div>
+
       </div>
     </div>
-  
-  <div id="gba"></div>
+
+<div id="gba"></div>
+
+<!-- Default Menu section -->
     <div id='cssmenu'>
+<ul>
+   
+   <li class='active has-sub'><a href='Home.html'><span>Genres</span></a>
       <ul>
-        <li class='active has-sub'><a href='Home.html'><span>Genres</span></a>
-          <ul>
-           <li class='has-sub'><a href='homewithfliter.html'><span>Fiction</span></a></li>
-           <li class='has-sub'><a href='homewithfliter.html'><span>Non-Fiction</span></a></li>
+         <li class='has-sub'><a href='homewithfliter.html'><span>Fiction</span></a></li>
+         <li class='has-sub'><a href='homewithfliter.html'><span>Non-Fiction</span></a></li>
 
-           <li class='has-sub'><a href='homewithfliter.html'><span>Sci Fi</span></a></li>
-           <li class='has-sub'><a href='homewithfliter.html'><span>Fantasy</span></a></li>
-           <li class='has-sub'><a href='homewithfliter.html'><span>Romance</span></a></li>
-           <li class='has-sub'><a href='homewithfliter.html'><span>Children</span></a></li>
-          </ul>
-        </li>
-       <li><a href='news.html'><span>News</span></a></li>
-       <li ><a href='about.html'><span>About</span></a></li>
-       <li ><a href='contact.html'><span>Contact</span></a></li>
+         <li class='has-sub'><a href='homewithfliter.html'><span>Sci Fi</span></a></li>
+         <li class='has-sub'><a href='homewithfliter.html'><span>Fantasy</span></a></li>
+         <li class='has-sub'><a href='homewithfliter.html'><span>Romance</span></a></li>
+         <li class='has-sub'><a href='homewithfliter.html'><span>Children</span></a></li>
       </ul>
-    </div>
+   </li>
+   <li><a href='news.html'><span>News</span></a></li>
+   
+   <li ><a href='about.html'><span>About</span></a></li>
+   <li ><a href='contact.html'><span>Contact</span></a></li>
 
-    <div class="row1">
+
+
+</ul>
+
+</div>
+
+
+    <div class="col-9of10">
       <div class="info-container">
         <div class="cover-container">
         <img src="img/book4.png" alt = "consult">
       </div>
 
     <div class="info-box-top">
-     <h1 class="document-title" itemprop="name">UX Design 2015 & 2016</h1>
+     <h1 class="document-title">UX Design 2015 & 2016</h1>
       <div class="document-subtitles">
         <div class="left-info"> 
           <h3>Successful Trends for Digital Products</h3>
           <h4>By <a href=''> Leon Ive</a>  Feb 2015</h4>
           <h3>Price: <strong>$19.99 CAD</strong> </h3>
-          </br>
-          <li>164 pages of tips, examples, and resources..</li>
-
-          <li>Best practices taught by analyzing 71 examples from companies like Waze, Tinder, Nest, Lookout, Vine, Hulu, Netflix, Spotify.</li>
-          <li>See real-world application instead of just theory.</li>
+          <br>
+          <p style="display: list-item;margin-left: 15px;">164 pages of tips, examples, and resources..</p>
+          <p style="display: list-item;margin-left: 15px;">Best practices taught by analyzing 71 examples from companies like Waze, Tinder, Nest, Lookout, Vine, Hulu, Netflix, Spotify</p>
+          <p style="display: list-item;margin-left: 15px;">See real-world application instead of just theory.</p>
         </div>
       </div>
     </div>
@@ -105,8 +116,8 @@
     </div>
     
     <div class="details-section description simple contains-text-link">
-      <div id="accordian" style="margin: 0;">
-        <div class="step" id="step5">
+      <div id="box" style="margin: 0;">
+        <div class="step">
           <div class="title">
             <h2>EBook Details: </h2>
           </div>
@@ -128,32 +139,32 @@
         <p><strong>Enhanced Typesetting:</strong> Not Enabled </p> 
       </div>
          
-      <div class="step" id="step5">
+      <div class="step">
         <div class="title">
           <h2>CUSTOMER REVIEWS: </h2>
          </div>
       </div>
       
-      <div class="content" id="news">
-        <div class="center" style="padding: 0% 0% 3% 0%; display: list-item;">
+      <div class="content">
+        <div class="center" style=" padding: 0% 0% 3% 0%; display: list-item;">
           <h3>Tough to read but worth it </h3>
-          <h4>This was hard to read. My daughter wasn't even a year yet when I read this and I kept looking at her and thinking of what it would be like if that were us. But what a story!! And a </br>few days after finishing a news story broke of a man who had three women locked in his house for ten years. One of them had born him a child. And they were rescued. It really</br> sent chills through my spine.
+          <h4>This was hard to read. My daughter wasn't even a year yet when I read this and I kept looking at her and thinking of what it would be like if that were us. But what a story!! And a <br>few days after finishing a news story broke of a man who had three women locked in his house for ten years. One of them had born him a child. And they were rescued. It really<br> sent chills through my spine.
            </h4>
             <h4>KAITE | JULY 29, 2015  </h4>
         </div>
 
         <div class="center" style="padding: 3% 0% 3% 0%;border-top: 1px solid #5c5c5c; display: list-item; border-bottom: 1px solid #5c5c5c;">
            <h3>It sounds like a good idea. ...</h3>
-            <h4>Reading this book from the point of view of a child was horrible to read. It was like reading a child's book that went on way too long.... it was recommended to me at the book store </br>and I was highly disappointed. There's no brain power required.</h4>
+            <h4>Reading this book from the point of view of a child was horrible to read. It was like reading a child's book that went on way too long.... it was recommended to me at the book store <br>and I was highly disappointed. There's no brain power required.</h4>
             <h4>KELLY | JUNE 12, 2015 </h4>
         </div>
       </div>
-<div class="step" id="step5">
+<div class="step">
         <div class="title">
           <h2>MY REVIEWS: </h2>
          </div>
       </div>
-       <div class="content" id="news">
+       <div class="content" >
           <div class ="center"  >
               <form class="form-style-1"  >
                 <fieldset style="padding: 5%;">
@@ -169,11 +180,12 @@
                 </li>
               </fieldset>
             </form>
-            <button class="btn1" "continue">Save</button>
+            <button id="btn1" class="continue">Save</button>
           </div>
         </div>
     </div>
   </div>
+</div>
 </div>
 
 <footer class="footer-distributed">
@@ -191,7 +203,7 @@
 
   <div class="footer-center">
         <h3>Find us</h3>
-          <p class="footer-company-about">The Eevee  </br> 21 University Drive </br> Surrey, Vancouver</br>V1P, 2V6</br>CANADA</br>+1 604-1234567</p>
+          <p class="footer-company-about">The Eevee  <br> 21 University Drive <br> Surrey, Vancouver/br>V1P, 2V6<br>CANADA<br>+1 604-1234567<p>
           <div>
             <a class="footer-company-name" href="">support@theEevee.com</a>
           </div>

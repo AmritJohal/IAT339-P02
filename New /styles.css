@@ -1,4 +1,67 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+body {
+    background-color: #eeeeee;
+    color: #333;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: -1;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "proxima-nova",sans-serif;;
+}
+h2 {
+    margin: 5px 0;
+    font-size: 18px;
+    padding: 5px 0 5px 0;
+    letter-spacing: 1px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 500;}
+
+h4 {
+    line-height: 20px;
+    color: #5c5c5c;
+    font-weight: 300;
+    margin: 15px 0;
+    font-size: 13px;
+    font-weight: 300;}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+
+}
+
+
+section {
+  margin: 1em 0;
+  padding: 5em 0;
+  width: 100%;
+
+}
+
+
+section:not([id]) {
+  margin: 0px;
+  padding-bottom: 15px;
+
+  padding-top: 15px;
+width: 100%;
+}
+
+
+/*main menu*/
 #cssmenu {
   background: white;
   margin: 0;
@@ -6,7 +69,6 @@
   padding: 0;
   display: block;
   position: relative;
-  font-family: 'Roboto', sans-serif;
 }
 #cssmenu ul {
   list-style: none;
@@ -86,10 +148,6 @@
 #cssmenu ul li ul li:hover > ul > li {
   position: relative;
 }
-
-
-
-
 
 #cssmenu > ul > li {
   float: left;
@@ -190,6 +248,15 @@
 }
 
 
+.fiction h1{
+  font-weight: 300;
+  font-size: 3.5em;
+  letter-spacing: 1px;
+  margin: 60px 0% 0% 60px;
+  line-height: 105%;
+  text-transform: uppercase;
+}
+
 /*style for filter*/
 .grid .filter{
     display: flex;
@@ -198,27 +265,27 @@
     margin-top:30px;
 }
 .grid .nav{
-  width:33.3%;
+  width: 33.3%;
   padding: 15px 1px 15px 1px;
 
 }
-.nav ul li {width:100%}
+.nav ul li {
+  width:100%
+}
 .nav ul {
-    font-family: 'Roboto-Light';
-    *zoom:1;
-    list-style:none;
-    background:white;
+    list-style: none;
+    background: white;
     display: block;
-    padding:0;
-    width:100%;
+    padding: 0;
+    width: 100%;
     margin: 0;
 }
 .nav ul:before,.nav ul:after {
-    content:"";
-    display:table;
+    content: "";
+    display: table;
 }
 .nav ul:after {
-    clear:both;
+    clear: both;
 }
 .nav ul > li {
     float:left;
@@ -278,23 +345,14 @@
 
 
 /*-----------------------------buying style*/
-/* Dcrazed style */
-.headline{text-align:center;margin:20px 0 75px}
-.headline img{display:block;margin:0 auto 20px}
-.headline > h6{display:inline-block;width:20px;border-bottom:3px solid #e33000;margin-bottom:-11px;padding:0}
-.headline h1{
-  display:inline-block;
-  font-weight:100;
-  text-transform:uppercase;
-}
 
 
-#accordian{
-  font-family: "Roboto-Light";
+
+#box{
 
   margin:30px;
 }
-#accordian .number{
+#box .number{
   width:30px;
   height:30px;
   background:#fff;
@@ -304,57 +362,46 @@
   float:left;
   margin-top: 7.5px;
 }
-#accordian .step{
+#box .step{
   width:100%;
   background:#009688;
   color:#FFF;
   padding-left:30px;
   float:left;
 }
-#accordian .title{
+#box .title{
   float:left;
   width:100%;
 }
-#accordian .title h1{
+#box .title h1{
   margin-top: 12px;
   margin-bottom: 12px;
-  font-size:18px;
-  font-weight:100;
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
 
 }
-#accordian .modify{
-  float:left;
-  width:40px;
-  height:40px;
-  color:#aaa;
-  background:#FFF;
-  text-align:center;
-  font-size:4em;
-  border-radius:50%;
-  margin-top:5px;
-  padding-top:0px;
-  cursor:pointer;
-}
-#accordian .modify i{
-  margin-top:0px;
-  display:block;
-}
-#accordian .content h3{
-  font-family: 'Roboto-Regular', sans-serif;
+
+#box .content h3{
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 400;
   margin: 0;
 }
-#accordian .content{
+#box .content{
+  padding: 30px;
   width:100%;
   margin:0 auto;
   background:#FFF;
   height:auto;
   display:block;
   float:left;
-  font-family:'Roboto-Light', sans-serif;
+
 }
-#accordian .content label{
+
+#box p{
+  font-size: 15px;
+}
+#box .content label{
   font-size:8px;
   text-align: center;
   vertical-align: middle;
@@ -389,9 +436,8 @@ form input:focus + label, form textarea:focus + label {
 
 }
 
-#accordian .content button{
-  font-size: 1em;
-  font: 2em "Roboto-Light";
+#box .content button{
+  font-size: 2em;
   margin-top: 20px; 
   margin-bottom: 40px;
   background:#3F51B5;
@@ -402,11 +448,11 @@ form input:focus + label, form textarea:focus + label {
   clear:both;
   border: 0px outset buttonface;
 }
-#accordian .content .continue, #accordian .content button{ 
+#box .content .continue, #box .content button{ 
   float:right;
   background:#1380b5;
   padding:1em;
-  font-size:14px;
+  font-size:16px;
   color:#FFF;
   clear:both;
   text-align:center;
@@ -424,40 +470,40 @@ form input:focus + label, form textarea:focus + label {
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
+  text-transform: uppercase;
 }
 
-#accordian .content .continue:hover,#accordian .content .continue:focus,#accordian .content .continue:active {
+#box .content .continue:hover,#box .content .continue:focus,#box .content .continue:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 
-#accordian .left,#accordian .right{
-  padding: 0% 3% 0% 3%;
+#box .left, #box .right{
+  padding: 2% 3% 2% 3%;
   width:50%;
   float:left;
 
 }
 
-#accordian .box1{
+#box .box1{
   padding: 0% 3% 0% 3%;
   width:33.3%;
   float:left;
 
 }
-#accordian .center{
+#box .center{
   padding: 1% 3% 3% 3%;
   width:100%;
 }
 
 
 
-#accordian #payment .expiry{
-  font-family: "Roboto-Light";
+#box #payment .expiry{
 
 
 }
 
-#accordian #payment .month_select,#accordian #payment .year_select{
+#box #payment .month_select, #box #payment .year_select{
   
   border: 1px solid #ccc;
   display: inline-block;
@@ -465,11 +511,11 @@ form input:focus + label, form textarea:focus + label {
   margin-bottom: 3%;
 
 }
-#accordian #payment span.divider{
+#box #payment span.divider{
   font-size: 1%;
   width: 2%;
 }
-#accordian .month_select select,#accordian .year_select select{
+#box .month_select select, #box .year_select select{
   background: transparent;
   display:inline-block;
   width: 100%;
@@ -479,7 +525,7 @@ form input:focus + label, form textarea:focus + label {
   height: 32.8px;
 
 }
-#accordian #payment .expiry{
+#box #payment .expiry{
   display:block;
   float:left;
   width: 100%;
@@ -487,14 +533,14 @@ form input:focus + label, form textarea:focus + label {
 
 
 /*card types*/
-#accordian .accepted{
+#box .accepted{
   width:100%;
   margin-top:3%;
 
 }
 
 
-#accordian .accepted img{
+#box .accepted img{
   position: relative;
   display:inline;
   margin-right: 5%;
@@ -509,8 +555,9 @@ form input:focus + label, form textarea:focus + label {
       -ms-transition: all 1s ease;
           transition: all 1s ease;
 }
-#accordian .accepted img:hover {
+#box .accepted img:hover {
   -webkit-filter: brightness(110%);
+
 
 }
 ul.img-list {
@@ -551,11 +598,7 @@ span.text-content span {
 }
 
 
-/*--------*/
-
-
-
-#accordian .billing  {
+#box .billing  {
   padding: 0.5em;
   display: table;
   width: 80%;
@@ -564,12 +607,12 @@ span.text-content span {
 
 }
 
-#accordian .radioinput{
+#box .radioinput{
   display: table-cell;
   white-space: nowrap;
   border-radius: 0 !important;
 }
-#accordian .paymentradio{
+#box .paymentradio{
   max-width: 69px;
   padding-left: 25px;
   padding-right:25px;
@@ -577,14 +620,14 @@ span.text-content span {
   white-space: nowrap;
   border-radius: 0 !important;
 }
-#accordian .billing label {
+#box .billing label {
   cursor: pointer;
   vertical-align: middle;
   width: 100%;
   font-size: 14px;
   text-align: left;
 }
-#accordian .billing p,{
+#box .billing p{
   font-size: 14px;
   margin-left: 10%;
 }
@@ -628,19 +671,17 @@ input[type="radio"] {
 
 
 
-#accordian .product_name{
+#box .product_name{
   font-size: 14px;
 }
-#accordian .product_image{
+#box .product_image{
   width:15%;
   float:left;
 }
 .product_image img{
   width:100%;
 }
-#accordian .product_details{
-
-  font-family: "Roboto-Regular";
+#box .product_details{
   margin-left: 20%;
    margin-top: 9%;
    margin-bottom: 12%;
@@ -650,14 +691,14 @@ input[type="radio"] {
   text-align: left;
   font-size: 15px;
 }
-#accordian  .product_details span{
+#box .product_details span{
   display:table-cell;
   vertical-align: middle;
   margin-top:30%;
   color:black;
   width:50%;
 }
-#accordian .totals{
+#box .totals{
 
   width:100%;
   float:left;
@@ -667,16 +708,19 @@ input[type="radio"] {
 }
 
 
+/* the box to be responsive */
 
 
 @media(max-width:880px){
-  #accordian .left, #accordian .right {
+  #box .left, #box .right, #box .box1, #box .center{
       width: 100%;
       float: left;
+      border: 1px solid #009688;
+      margin-bottom: 10px;
   }
-  #accordian .box1, #accordian .center {
-      width: 100%;
-      float: left;
+  .nav a{
+    width: 100%;
+    font-size: 13px;
   }
 }
 form > div {
@@ -686,7 +730,6 @@ form > div {
   
 }
 form input, form textarea {
-  font-family: "Roboto-Light";
   font-size: 14px;
   margin-bottom:0.8em;
   width: 100%;
@@ -707,15 +750,9 @@ form input, form textarea {
     -o-transition: all 0.30s ease-in-out;
 }
 
-
-
-
-
-
 /* Styling for text input field and label */
-<style type="text/css">
 .form-style-1 {
-    max-width: 400px;
+    max-width: 100%;
 }
 .form-style-1 li {
     padding: 0;
@@ -736,7 +773,6 @@ form input, form textarea {
     width: 100%;
     border: 0;
     border-radius: 0;
-    font-family: "Roboto-Light";
     font-size: 14px;
     margin-bottom: 1em;
     height: 35px;
@@ -749,7 +785,6 @@ form input, form textarea {
 }
 .form-style-1 input[type=submit], .form-style-1 input[type=button]{
     background: #1380b5;
-    padding: 1em;
     border: none;
     color: #fff;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -760,6 +795,8 @@ form input, form textarea {
     transition-duration: 0.3s;
     -webkit-transition-property: box-shadow;
     transition-property: box-shadow;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
@@ -767,4 +804,205 @@ form input, form textarea {
 .form-style-1 .required{
     color:red;
 }
-</style>
+
+
+
+/*styling product details contents*/
+.cover-container {
+    float: none;
+    display: inline-block;
+    margin: 0 50px 0 30px;
+}
+
+.cover-container img {
+
+
+  width: 267px;
+    height: auto;
+    box-shadow: 0 5px 10px #8d8d8d;
+    
+}
+
+.info-container{
+  overflow: hidden;
+    white-space: nowrap;
+
+    padding: 0;
+    position: relative;
+    min-height: 195px;
+}
+
+
+.info-container .info-box-top {
+    box-sizing: border-box;
+    min-height: 200px;
+    padding-bottom: 60px;
+    vertical-align: top;
+}
+.info-container .info-box-top, .info-container .info-box-bottom {
+    display: inline-block;
+    white-space: normal;
+    width: 550px;
+}
+.info-container .info-box-bottom {
+  width: 450px;
+  left: -553px;
+    margin-top: 190px;
+    top: -10px;
+    position: relative;}
+
+
+.info-container .document-title {
+    margin: 0px 30px 0px 0;
+    color: #333;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    white-space: normal;
+}
+.info-container .info-box-top .document-subtitles {
+    margin-bottom: 10px;
+}
+.info-container .document-subtitles .left-info {
+  
+    color: #616161;
+    float: left;
+
+    text-decoration: none;
+}
+.info-container .document-subtitles .left-info h3  {
+  font-weight: 300;
+    margin: 5px 0; 
+    font-size: 18px;
+}
+.info-container .document-subtitles .left-info h4  {
+  line-height: 13px;
+  color: #5c5c5c;
+  font-weight: 300;
+    margin: 15px 0; 
+    font-size: 13px;
+}
+
+
+.details-section {
+    background: #fff;
+    margin-top: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.row1 .details-section .heading {
+    color: #212121;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.reviews .details-section-heading .heading {
+    margin-bottom: 12px;
+}
+.reviews .details-section-heading .heading, .review-actions {
+    display: inline-block;
+}
+.details-section .heading {
+    color: #333;
+    font-size: 28px;
+    font-weight: 100;
+    margin: 0 0 10px 0;
+}
+.details-actions-left {
+    float: left;
+}
+.details-actions-right {
+    float: right;
+    text-align: right;
+}
+
+.wishlist-display, .wishlist-container {
+    display: inline-block;}
+
+.wishlist-container .wishlist-icon{
+    background-image: url(img/wishlist.png);
+    opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 32px;
+    margin-left: -10px;
+    margin-top: 1px;
+    position: absolute;
+    width: 32px;
+    color: #1380b5;
+    padding: 10px;
+}
+.wishlist-text{
+  min-width: 95px;
+    padding-left: 20px;
+
+}
+.wishlist-text-add{
+    color: #1380b5;
+    display: block;
+    font-size: 13px;
+    min-width: 110px;
+    padding: 10px;
+}
+.wishlist-text-add:hover{
+    color: black;
+}
+
+/*-------------------*/
+
+@media (max-width: 475px) {
+
+  .col-9of10 .info-container .cover-container{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.col-9of10 .info-container .cover-container img{
+
+  width: 100%
+}
+
+.col-9of10 .info-container .info-box-top{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline;
+}
+.col-9of10 .info-container .info-box-bottom{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    display: inline;
+}
+
+.col-9of10 .info-container .info-box-bottom .details-actions-left
+{display: none;}
+.col-9of10 .info-container .info-box-bottom .details-actions-right{
+  display: inline-block;
+  width: 100%;
+
+
+
+}
+}
+
+
+.details-info .info-container {
+    padding: 0;
+    position: relative;
+}
+.details-info .info-container {
+    min-height: 195px;
+    width: 100%;
+  }
+
+
+
+
+
